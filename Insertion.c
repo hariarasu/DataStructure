@@ -27,7 +27,7 @@ int main()
       arr[position]=element;
     //   update the size of the array
       size++;
-    //   peint the updated array
+    //   print the updated array
     printf("\nAfter the inserton\n");
     for (int i = 0; i < size; ++i) {
         printf("%d ", arr[i]);
