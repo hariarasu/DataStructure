@@ -29,9 +29,10 @@ int main()
       size++;
     //   print the updated array
     printf("\nAfter the inserton\n");
-    for (int i = 0; i < size; ++i) {
+    for (int i = 0; i < size; ++i)
+     {
         printf("%d ", arr[i]);
     }
-    }
+  }
     return 0;
 }
