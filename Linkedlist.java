@@ -31,6 +31,20 @@ class LinkedList1 {
 
         last.next = newNode;
     }
+    // Method to reverse the linked list
+    public void reverse() {
+        Node prev = null;
+        Node current = head;
+        Node next = null;
+
+        while (current != null) {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        head = prev;
+    }
 
     // Method to display the linked list
     public void display() {
@@ -54,5 +68,10 @@ class LinkedList1 {
         // Displaying the linked list
         System.out.println("Linked List Value: ");
         linkedList.display();
+        // Reverse the linked list
+          System.out.println("Reversed Linked List Values: ");
+          linkedList.reverse();
+          linkedList.display();
+      
     }
 }
